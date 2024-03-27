@@ -29,6 +29,22 @@ final List<String> imgList = [
   'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Shark/NotShark.jpg'
 ];
 
+//Local mais qui ne marche pas (je pense qu'ils ne sont pas inclus)
+/**final List<String> imgList = [
+  './img/Puffer/Puffer.jpg',
+  './img/Penguin/Penguin.jpg',
+  './img/Octopus/Octopus2.jpg',
+  './img/Eel/eel2.jpeg',
+  './img/Eel/eel.jpg',
+  './img/Dolphin/Dolphin.png',
+  './img/Squid/squid.jpg',
+  './img/Seahorse/Seahorse.JPG',
+  './img/Sea_tortoise/Turtle.jpg',
+  './img/Shark/Shar.jpg',
+  './img/Shark/Shark.jpg',
+  './img/Shark/NotShark.jpg'
+];*/////
+
 void main() {
   runApp(const MyApp());
 }
