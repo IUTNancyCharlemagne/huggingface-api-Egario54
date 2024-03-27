@@ -60,7 +60,8 @@ Future<File> getImage(String url) async {
 }
 
 Future<File> getLocalImage(String filePath) async {
-  return File(filePath);
+  final Directory appDir = await getApplicationDocumentsDirectory();
+  return File(join(appDir.path, filePath));
 }
 
 // Reading bytes from a network image

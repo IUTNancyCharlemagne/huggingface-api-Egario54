@@ -15,26 +15,18 @@ import 'widgets.dart';
 import 'utils.dart';
 
 final List<String> imgList = [
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/bacterial_leaf_blight/100023.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/bacterial_leaf_blight/100049.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/bacterial_leaf_streak/100042.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/bacterial_leaf_streak/100084.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/bacterial_panicle_blight/100043.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/bacterial_panicle_blight/100058.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/blast/100004.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/blast/100006.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/brown_spot/100022.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/brown_spot/100001.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/dead_heart/100008.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/dead_heart/100020.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/downy_mildew/100031.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/downy_mildew/100017.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/hispa/100003.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/hispa/100005.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/normal/100007.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/normal/100002.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/tungro/100011.jpg',
-  'https://raw.githubusercontent.com/dnth/huggingface-timm-mobile-blogpost/main/sample_images/tungro/100013.jpg'
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Puffer/Puffer.jpg',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Penguin/Penguin.jpg',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Octopus/Octopus2.jpg',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Eel/eel2.jpeg',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Eel/eel.jpg',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Dolphin/Dolphin.png',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Squid/squid.jpg',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Seahorse/Seahorse.JPG',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Sea_tortoise/Turtle.jpg',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Shark/Shar.jpg',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Shark/Shark.jpg',
+  'https://github.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Shark/NotShark.jpg'
 ];
 
 void main() {
@@ -71,6 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final RoundedLoadingButtonController _btnController =
       RoundedLoadingButtonController();
 
+  // ignore: unused_field
   String? _resultString;
   Map _resultDict = {
     "label": "None",
@@ -185,7 +178,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                           String imgUrl = imgList[imgList.indexOf(item)];
 
-                          final imgFile = await getImage(imgUrl);
+                          final File imgFile = await getImage(imgUrl);
 
                           setState(() {
                             imageURI = imgFile;
@@ -274,7 +267,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 title: const Text('Exit app'),
                 onTap: () {
                   // just exitin'
-                  ()=> exit(0);
+                  exit(0);
                 },
               ),
             ],
@@ -345,10 +338,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: MediaQuery.of(context).size.width * 0.5,
                   color: Colors.blue,
                   successColor: Colors.green,
-                  // resetAfterDuration: true,
-                  // resetDuration: const Duration(seconds: 10),
-                  child: const Text('Classify!',
-                      style: TextStyle(color: Colors.white)),
                   controller: _btnController,
                   onPressed: isClassifying || imageURI == null
                       ? null // null value disables the button
@@ -356,8 +345,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           isClassifying = true;
 
                           imgBytes = imageURI!.readAsBytesSync();
-                          String base64Image = "data:image/png;base64," +
-                              base64Encode(imgBytes!);
+                          String base64Image = "data:image/png;base64,${base64Encode(imgBytes!)}";
 
                           try {
                             Stopwatch stopwatch = Stopwatch()..start();
@@ -375,6 +363,10 @@ class _MyHomePageState extends State<MyHomePage> {
                           }
                           isClassifying = false;
                         },
+                  // resetAfterDuration: true,
+                  // resetDuration: const Duration(seconds: 10),
+                  child: const Text('Classify!',
+                      style: TextStyle(color: Colors.white)),
                 ),
               ),
               Row(
