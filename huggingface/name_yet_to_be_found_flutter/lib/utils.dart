@@ -59,6 +59,10 @@ Future<File> getImage(String url) async {
   return file;
 }
 
+Future<File> getLocalImage(String filePath) async {
+  return File(filePath);
+}
+
 // Reading bytes from a network image
 Future<Uint8List> readNetworkImage(String imageUrl) async {
   final ByteData data =
