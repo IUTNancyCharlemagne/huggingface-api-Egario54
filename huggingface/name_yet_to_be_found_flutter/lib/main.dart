@@ -15,18 +15,18 @@ import 'widgets.dart';
 import 'utils.dart';
 
 final List<String> imgList = [
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Puffer/Puffer.jpg',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Penguin/Penguin.jpg',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Octopus/Octopus2.jpg',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Eel/eel2.jpeg',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Eel/eel.jpg',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Dolphin/Dolphin.png',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Squid/squid.jpg',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Seahorse/Seahorse.JPG',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Sea_tortoise/Turtle.jpg',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Shark/Shar.jpg',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Shark/Shark.jpg',
-  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/tree/main/huggingface/name_yet_to_be_found_flutter/img/Shark/NotShark.jpg'
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Puffer/Puffer.jpg',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Penguin/Penguin.jpg',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Octopus/Octopus2.jpg',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Eel/eel2.jpeg',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Eel/eel.jpg',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Dolphin/Dolphin.png',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Squid/squid.jpg',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Seahorse/Seahorse.JPG',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Sea_tortoise/Turtle.jpg',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Shark/Shar.jpg',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Shark/Shark.jpg',
+  'https://raw.githubusercontent.com/IUTNancyCharlemagne/huggingface-api-Egario54/main/huggingface/name_yet_to_be_found_flutter/img/Shark/NotShark.jpg'
 ];
 
 //Local mais qui ne marche pas (je pense qu'ils ne sont pas inclus)
