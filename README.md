@@ -9,3 +9,5 @@ Il comporte :
 - Une IA de reconnaissance visuelle,
 - Des plugins pour utiliser la caméra et réarranger les images,
 - Un bouton exit (vive les boutons exit).
+
+Lien de l'APK : https://drive.google.com/file/d/1CQ65yheN5U7p1SdBFp14WRp97PqWy7xj/view?usp=drive_link
